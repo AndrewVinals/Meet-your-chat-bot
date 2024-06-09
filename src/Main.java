@@ -11,5 +11,15 @@ public class Main {
         String name = sc.nextLine();
 
         System.out.println("What a great name you have, " + name + "!");
+        System.out.println("Let me guess your age.");
+        System.out.println("Enter remainders of dividing your age by 3, 5 and 7.");
+
+        int remainder3 = sc.nextInt();
+        int remainder5 = sc.nextInt();
+        int remainder7 = sc.nextInt();
+
+        int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
+
+        System.out.printf("Your age is %s; that's a good time to start programming!", age);
     }
 }
