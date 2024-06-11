@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Hello! My name is Sam.");
@@ -20,6 +20,15 @@ public class Main {
 
         int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
 
-        System.out.printf("Your age is %s; that's a good time to start programming!", age);
+        System.out.printf("Your age is %s; that's a good time to start programming!\n", age);
+        System.out.println("Now I will prove to you that I can count to any number you want.");
+
+
+        int count = sc.nextInt();
+        for(int i = 0; i <= count; i++){
+            System.out.println(i + "!");
+        }
+
+        System.out.println("Completed, have a nice day!");
     }
 }
